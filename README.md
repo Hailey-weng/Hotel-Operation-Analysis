@@ -32,4 +32,41 @@ may result in poor results, so I merged canceld and non-canced dataset and shffu
 EDA means Exploratory Data Analysis, which is a method that help us understand the dataset quickly and figure out the problems in the dataset.
 
 <h3>Where do the guests come from?</h3>
-<p>In this question, I'd like to see which country that most of the guests come from.</p>
+
+
+<h3>How much do guests pay for a room per night?</h3>
+<p>In this part, I'd like to see how much the guests pay for different room type per night. To get the total guests, I added up numbers of adult and numbers of child. Then, I diveded the total price by total guest. Also, I calcualte the prices by resort hotel and city hotel seperately. </p>
+
+<h3>How does the price per night vary over the year?</h3>
+<p>In this question, I'd like to see how the price vary over the year. So, I used the "adr_pp", which obtained from the last question and the arrival months
+to see the trend of the price.</p>
+
+<h3>Which are the most busy month?</h3>
+<p>I calculated the guests by different types of hotels, such as city hotel and resort hotel. Also, I found the dataset contains July and August date from 3 years, the other month from 2 years. So, I normalize the data to get the appropriate data for July and August.</p>
+
+<h3>How long do people stay at the hotels?</h3>
+<p>To calculate the total nights that the guests stay, I added up two columns, "stays_in_weekend_nights" and "stays_in_week_nights". Then I devided the total nights by the total guests to figure out the average nights that a guest stay.</p>
+
+<h3>Bookings by market segment</h3>
+<p>I counts the numbers for different segments to see which channel that most people book rooms.</p>
+
+<h3>How many bookings were canceled?</h3>
+<p>Cancellations may cause big impact to hotels, so I'd like to see how many bookings were canceld. So I filtered out the canceld bookings and divided it by the total numbers of bookings.</p>
+
+<h3>Which month have the highest number of cancelations?</h3>
+<p>I also checked which month have the highest number of cancellations.</p>
+
+<h1>Predict cancelations</h1>
+<h3>Which numerical features are most important?</h3>
+
+<p>I used the correlations to see which features are most important to cancellations.</p>
+<h3>Comapring different models</h3>
+<li>Seperate features and predicted values:</li>
+<p>I added up numerical and category features and set them as x. Then, set the column "is_canceled" as y.</p>
+<li>Feature preprocessing:</li>
+<p>I used the strategy "constant" to fill the values for numerical features and "unknown" for categorical features.</p>
+<li>define models to test:</li>
+<p>By utilizing different functions to difine models, I got differe cross validation accuarcy scores for those models. Besides by adjusting parameters of the random forest model, I created a enhanced one to see if the scores could be higher.</p>
+
+<h1>Evaluate Feature importance</h1>
+<p>By evaluating the feature importance, we could see which factor may influence the cancellation rates the most.</p>
