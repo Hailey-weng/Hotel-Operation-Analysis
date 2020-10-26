@@ -32,7 +32,7 @@ may result in poor results, so I merged canceld and non-canced dataset and shffu
 EDA means Exploratory Data Analysis, which is a method that help us understand the dataset quickly and figure out the problems in the dataset.
 
 <h3>Where do the guests come from?</h3>
-
+In this question, I'd like to see which country that most of the guests come from. First, I filter out the data that rooms were cancelled, then counts the number of the guests by coutries.
 
 <h3>How much do guests pay for a room per night?</h3>
 <p>In this part, I'd like to see how much the guests pay for different room type per night. To get the total guests, I added up numbers of adult and numbers of child. Then, I diveded the total price by total guest. Also, I calcualte the prices by resort hotel and city hotel seperately. </p>
